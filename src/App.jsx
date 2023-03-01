@@ -1,7 +1,7 @@
-import React from 'react'
-import reactLogo from './assets/react.svg'
-import { Clock } from './Clock/Clock'
-import './App.css'
+import React from 'react';
+import reactLogo from './assets/react.svg';
+import { Clock } from './Clock/Clock';
+import './App.css';
 
 function App() {
 
