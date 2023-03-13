@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 export function Clock() {
     const [startTime, setStartTime] = useState(0);
-    const audio = new Audio("/cat.mp3");
+    const audio = new Audio("/20_20_20/cat.mp3");
     const timeToStop = 20 * 60 * 1000; // 20 minutes
 
     /*useEffect(() => {
