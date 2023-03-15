@@ -16,11 +16,12 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <h2>This app helps you following the 20-20-20 rule</h2>
       <div className="card">
         <Clock></Clock>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        For every 20 minutes a person looks at a screen, they should look at something 20 feet away for 20 seconds.
       </p>
     </div>
   )
