@@ -11,8 +11,9 @@ export function Clock() {
     useEffect(()=>{
       //console.log('useEffect called');
       if(startTime) {
+        document.title = `19:59`;
         interval = setInterval(() => {
-        console.log('interval called');
+        //console.log('interval called');
         checkElapsedTimeSinceStart();
       }, 1000); 
       }
@@ -45,8 +46,9 @@ export function Clock() {
           document.title = `Hit the start button !`;
         }, 20000);
       } else {
-        const countDown = 20 - Math.floor(timeElapsed/1000/60);
-        document.title = `${countDown} ${countDown > 1 ? 'minutes' : 'minute'} left`;
+        const minutes = 19 - Math.floor(timeElapsed/1000/60);
+        const seconds = 59 - Math.floor((timeElapsed/1000)%60); 
+        document.title = `${minutes > 9 ? minutes : `0${minutes}`}:${seconds > 9 ? seconds : `0${seconds}`}`;
       }
     }
 
